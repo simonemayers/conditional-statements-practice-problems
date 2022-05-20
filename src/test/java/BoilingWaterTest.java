@@ -8,7 +8,7 @@ class BoilingWaterTest {
     @Test
     @DisplayName("Test if water is boiling")
     void shouldBoil(){
-        System.out.println("Boiling passed");
+        System.out.println("Boiling");
         assertEquals("Water is boiling!", BoilingWater.message(213));
         assertNotEquals("Water is not boiling!", BoilingWater.message(213));
     }
@@ -16,7 +16,7 @@ class BoilingWaterTest {
     @Test
     @DisplayName("Test if water is not boiling")
     void shouldNotBoil(){
-        System.out.println("Not boiling passed");
+        System.out.println("Not boiling");
         assertNotEquals("Water is boiling!", BoilingWater.message(212));
         assertEquals("Water is not boiling!", BoilingWater.message(212));
     }

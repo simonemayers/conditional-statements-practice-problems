@@ -10,7 +10,7 @@ class TriangleTest {
     @Test
     @DisplayName("finding the area of triangle")
     void shouldFindArea(){
-        System.out.println("Find area passed");
+        System.out.println("Find area");
         Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
         Triangle triangleB = new Triangle(3, 2.598, 3, 3, 3);
         assertEquals(60.0, triangleA.findArea());
@@ -20,7 +20,7 @@ class TriangleTest {
     @Test
     @DisplayName("Should show number of sides")
     void shouldNumOfSides(){
-        System.out.println("Number of sides passed");
+        System.out.println("Number of sides");
         assertEquals(3, Triangle.numOfSides);
     }
 

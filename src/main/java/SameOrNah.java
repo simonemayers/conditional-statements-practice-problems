@@ -7,10 +7,13 @@ public class SameOrNah {
         String word1 = input.next();
         System.out.println("Enter another word: ");
         String word2 = input.next();
+        System.out.println(compareWords(word1, word2));
+    }
+    public static String compareWords(String word1, String word2){
         if(word1.equals(word2)){
-            System.out.println("The words are the same");
+            return "The words are the same";
         } else {
-            System.out.println("The words are different");
+            return "The words are different";
         }
     }
 }
