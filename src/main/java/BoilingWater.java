@@ -6,10 +6,13 @@ public class BoilingWater {
         System.out.println("Enter a number greater than 212: ");
         int n = input.nextInt();
 
+        System.out.println(message(n));
+    }
+    public static String message(int n){
         if(n > 212){
-            System.out.println("Water is boiling!");
+            return "Water is boiling!";
         } else{
-            System.out.println("Water is not boiling!");
+            return "Water is not boiling!";
         }
     }
 }
